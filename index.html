@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Effect</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .heart {
+            font-size: 15vw; /* Tamanho responsivo */
+            color: red;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .heart:hover {
+            transform: scale(1.2);
+        }
+
+        .larissa {
+            font-size: 4vw; /* Tamanho responsivo */
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="larissa">Larissa, aperte o coração!</div>
+        <div class="heart" onclick="redirectToAnotherPage()">❤️</div>
+    </div>
+    <script>
+        function redirectToAnotherPage() {
+            window.location.href = "segundapagina.html"; // Substitua com o URL da página desejada
+        }
+    </script>
+</body>
+
+</html>
